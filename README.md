@@ -18,4 +18,4 @@ Expected Output: "ickquay"
 
 Test: "If "qu" is in the beginning consecutive consonants it will move the consonants before "qu" to the end of the word and add "ay."
 Code: pigLatin("squeal");
-Expected Output: "quealsay"
+Expected Output: "ealsquay"
