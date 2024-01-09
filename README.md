@@ -8,7 +8,7 @@ Test: "It will add 'way' to the end of words that begin with a vowel."
 Code: pigLatin("a");
 Expected Output: "away"
 
-Test: "It will move all of first consecutive consonants to the end and add 'ay' to the end of words with one or more consonants."
+Test: "It will move all of first consecutive consonants to the end and add 'ay' to the end of the word"
 Code: pigLatin("move")
 Expected Output: "ovemay"
 
