@@ -4,6 +4,8 @@ function pigLatin(userWord){
   const vowelsString = "aeiou";
   if (vowelsString.includes(userWord[0])) {
     output += "way";
+  } else if (userWord.slice(0, 2) == "qu") {
+    output = userWord.slice(2) + "quay";
   } else {
     const charactersArray = userWord.split("");
     for (let index = 0; index < charactersArray.length; index += 1) {
@@ -16,8 +18,7 @@ function pigLatin(userWord){
   return output;
 }
 
-
 //UI Logic
 window.addEventListener("load", function() {
-  console.log(pigLatin("move"));
+  console.log(pigLatin("quick"));
 })

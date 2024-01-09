@@ -12,7 +12,7 @@ Test: "It will move all of first consecutive consonants to the end and add 'ay' 
 Code: pigLatin("move")
 Expected Output: "ovemay"
 
-Test: "If the first 2 letters of a word "qu" then it will move them to the end and add "ay."
+Test: "If the first 2 letters of a word are "qu" then it will move them to the end and add "ay."
 Code: pigLatin("quick");
 Expected Output: "ickquay"
 
