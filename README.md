@@ -19,3 +19,14 @@ Expected Output: "ickquay"
 Test: "If "qu" is in the beginning consecutive consonants it will move the consonants before "qu" to the end of the word and add "ay."
 Code: pigLatin("squeal");
 Expected Output: "ealsquay"
+
+Describe: pigLatinPhrases();
+
+Test: "It will take a phrase and turn it into pigLatin"
+Code: pigLatinPhrases("Space the final frontier squeak");
+Expected Output: "acespay ethay inalfay ontierfray eaksquay"
+
+### To do:
+
+1. ~~Make it support phrases~~
+2. Do UI logic

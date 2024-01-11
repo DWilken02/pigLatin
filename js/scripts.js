@@ -1,5 +1,5 @@
 //Business Logic
-function pigLatin(userWord){
+function pigLatin(userWord) {
   let output = userWord;
   const vowelsString = "aeiou";
   if (vowelsString.includes(userWord[0])) {
@@ -23,7 +23,15 @@ function pigLatin(userWord){
   return output;
 }
 
+function pigLatinPhrases(userPhrase) {
+  const wordsArray = userPhrase.split(" ");
+  const pigLatinArray = [];
+  wordsArray.forEach((word) => pigLatinArray.push(pigLatin(word)));
+  return pigLatinArray.join(" ");
+}
+
 //UI Logic
 window.addEventListener("load", function() {
-  console.log(pigLatin("squeal"));
+  const outputPhrase = pigLatinPhrases("Space the final frontier squeak".toLowerCase());
+  console.log(outputPhrase);
 })
