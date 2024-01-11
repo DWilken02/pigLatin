@@ -31,7 +31,12 @@ function pigLatinPhrases(userPhrase) {
 }
 
 //UI Logic
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const outputPhrase = pigLatinPhrases(event.target.userInput.value.toLowerCase());
+  document.getElementById("result").innerText = outputPhrase;
+}
+
 window.addEventListener("load", function() {
-  const outputPhrase = pigLatinPhrases("Space the final frontier squeak".toLowerCase());
-  console.log(outputPhrase);
+  document.getElementById("pigLatinForm").addEventListener("submit", handleFormSubmission);
 })
