@@ -1,5 +1,19 @@
 ## Pig Latin
 
+#### By **DWilken02**
+
+#### _Uses pig latin on words or phrases_
+
+## Languages/Technologies used
+
+* JavaScript
+* HTML
+
+### Description
+
+This project translates the given word or phrase into Pig Latin.
+
+
 #### Tests:
   
 Describe: pigLatin();
@@ -26,7 +40,15 @@ Test: "It will take a phrase and turn it into pigLatin"
 Code: pigLatinPhrases("Space the final frontier squeak");
 Expected Output: "acespay ethay inalfay ontierfray eaksquay"
 
-### To do:
+## Setup/Installation
 
-1. ~~Make it support phrases~~
-2. Do UI logic
+1. Click the green code button
+2. Then click download zip
+3. Open the project folder
+4. Then drag the index.html file to a browser of your choice
+
+### [MIT license](license.txt)
+
+If you have any questions or concerns please contact me at DWilken01@gmail.com
+
+Copyright (c) _1/12/24_ _DWilken02_

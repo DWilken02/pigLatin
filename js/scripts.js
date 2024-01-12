@@ -35,6 +35,7 @@ function handleFormSubmission(event) {
   event.preventDefault();
   const outputPhrase = pigLatinPhrases(event.target.userInput.value.toLowerCase());
   document.getElementById("result").innerText = outputPhrase;
+  document.getElementById("userInput").value = "";
 }
 
 window.addEventListener("load", function() {
